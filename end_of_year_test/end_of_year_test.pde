@@ -1,5 +1,6 @@
 // George Zhang C22793985
 
+
 void setup() {
 
   size(800, 800);
@@ -79,3 +80,7 @@ void draw() {
   fill(255, 255, 0);
   ellipse(mouseX + 30, mouseY + 150, 30, 30);
 }
+
+class Flag { 
+  
+  } 
