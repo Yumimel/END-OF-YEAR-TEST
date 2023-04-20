@@ -16,7 +16,7 @@ void draw() {
   int rectangle8;
   int rectangle9;
   int rectangle10;
-
+  
   background(255);
 
   fill(255, 0, 0);
@@ -51,15 +51,20 @@ void draw() {
   rectangle9 = mouseX + 1;
   rectangle10 = mouseY + 250;
   rect(rectangle9, rectangle10, rectangle9, rectangle10);
-  
-  
+
+
   // triangles
+
+
   fill(0);
-  triangle(100, 100, 100, 400, 200, 250);
+  triangle(mouseX, mouseY, mouseX , mouseY + 300, mouseX + 100, mouseY + 150);
+  
+  
   fill(150, 75, 0);
-  triangle(100, 100, 100, 400, 170, 250);
+  triangle(mouseX, mouseY + 10, mouseX, mouseY + 290, mouseX + 90, mouseY + 150);
+ 
   fill(255, 192, 203);
-  triangle(100, 100, 100, 400, 140, 250);
+  triangle(mouseX, mouseY + 20, mouseX, mouseY + 280, mouseX + 80, mouseY + 150)
   fill(255, 255, 0);
   triangle(100, 100, 100, 400, 110, 250);
 };
