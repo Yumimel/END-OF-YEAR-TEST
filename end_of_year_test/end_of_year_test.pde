@@ -6,28 +6,60 @@ void setup() {
 }
 
 void draw() {
+  int rectangle1;
+  int rectangle2;
+  int rectangle3;
+  int rectangle4;
+  int rectangle5;
+  int rectangle6;
+  int rectangle7;
+  int rectangle8;
+  int rectangle9;
+  int rectangle10;
 
   background(255);
 
   fill(255, 0, 0);
-  rect(100, 100, 300, 50);
+  rect(mouseX, mouseY, mouseX, mouseY);
+
+
   fill(255, 255, 0);
-  rect(100, 150, 300, 50);
+  rectangle1 = mouseX + 1;
+  rectangle2 = mouseY + 50;
+  rect(rectangle1, rectangle2, rectangle1, rectangle2);
+
+
   fill(0, 255, 0);
-  rect(100, 200, 300, 50);
+  rectangle3 = mouseX + 1;
+  rectangle4 = mouseY + 100;
+  rect(rectangle3, rectangle4, rectangle3, rectangle4);
+
+
   fill(0, 255, 255);
-  rect(100, 250, 300, 50);
+  rectangle5 = mouseX + 1;
+  rectangle6 = mouseY + 150;
+  rect(rectangle5, rectangle6, rectangle5, rectangle6);
+
+
   fill(0, 0, 255);
-  rect(100, 300, 300, 50);
+  rectangle7 = mouseX + 1;
+  rectangle8 = mouseY + 200;
+  rect(rectangle7, rectangle8, rectangle7, rectangle8);
+
+
   fill(255, 0, 255);
-  rect(100, 350, 300, 50);
+  rectangle9 = mouseX + 1;
+  rectangle10 = mouseY + 250;
+  rect(rectangle9, rectangle10, rectangle9, rectangle10);
+  
+  
   // triangles
   fill(0);
   triangle(100, 100, 100, 400, 200, 250);
-  fill(150,75,0);
+  fill(150, 75, 0);
   triangle(100, 100, 100, 400, 170, 250);
-  fill(255,192,203);
+  fill(255, 192, 203);
   triangle(100, 100, 100, 400, 140, 250);
-  fill(255,255,0);
+  fill(255, 255, 0);
   triangle(100, 100, 100, 400, 110, 250);
 };
